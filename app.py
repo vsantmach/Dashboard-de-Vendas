@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide",
 )
 
-pf = pd.read_csv("c:\Users\vinis\OneDrive\Área de Trabalho\Visão das Vendas\Dashboard de Vendas.csv")
+pf = pd.read_csv("https://raw.githubusercontent.com/vsantmach/Dashboard-de-Vendas/refs/heads/main/Dashboard%20de%20Vendas.csv")
 
 print(pf.columns.tolist())
 
@@ -109,4 +109,5 @@ with col_graf4:
      )
      grafico_fatume.update_layout(title='Faturamento Mensal', yaxis={'categoryorder': 'total ascending'})                                       
   
+
      st.plotly_chart(grafico_fatume, use_container_width=True)
